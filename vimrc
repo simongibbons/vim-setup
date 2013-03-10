@@ -42,6 +42,7 @@ endif
 
 if has('gui_running')
     set guifont=Inconsolata\ Medium\ 11 "Setup font for Powerline
+    set guioptions-=T             "Remove the toolbar from gvim
 endif
 
 let g:solarized_termtrans = 1
