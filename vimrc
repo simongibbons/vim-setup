@@ -93,6 +93,11 @@ noremap <F3> :TagbarToggle<CR>
 
 "Map the leader key to something more convienient
 let mapleader = ","
+
+"Use tab with UltiSnips to jump forward rather than autocomplete with superTAB
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<Alt-tab>"
 "==================
 
 "=== INDENTS AND TABS ===
