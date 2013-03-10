@@ -35,9 +35,13 @@ set cursorline                    "Highlight Current line
 syntax enable                     "Enable Syntax Highlighting
 
 if has('gui_running')
-    set background=light          "Use a light background in GUI
+    set background=dark           "Use a dark background in GUI
 else
     set background=dark           "Use a dark background on consoles
+endif
+
+if has('gui_running')
+    set guifont=Inconsolata\ Medium\ 11 "Setup font for Powerline
 endif
 
 let g:solarized_termtrans = 1
@@ -62,6 +66,7 @@ if version >= 703
     set relativenumber            "Use relative line numbering
 endif
 
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim "Include Powerline
 set laststatus=2                  "Always display the status line
 
 au FocusLost * :wa                "Automatically write a file on loss of focus
