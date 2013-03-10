@@ -25,3 +25,6 @@
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = git://github.com/vim-scripts/pydoc.vim.git
+[submodule "bundle/ropevim"]
+	path = bundle/ropevim
+	url = git://github.com/peplin/ropevim.git
